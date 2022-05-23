@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>New employe</title>
+</head>
+
+<body>
+    <section>
+
+        <!-- Aside -->
+        <aside></aside>
+
+        <!-- Header -->
+        <header>
+            <div class="nav__search">
+                <i class='bx bx-search-alt-2'></i>
+                <input type="text" name="search" placeholder="Search topics">
+            </div>
+            <ul class="nav">
+                <li class="nav__item">
+                    <i class='bx bx-bell'></i>
+                    <span>4</span>
+                </li>
+                <li class="nav__item">
+                    <i class='bx bx-message'></i>
+                    <span>3</span>
+                </li>
+                <li class="nav__item">
+                    <i class='bx bx-power-off'></i>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <div class="main__head">
+                <div class="main__img">
+                    <i class='bx bx-group'></i>
+                </div>
+                <div class="main__title">
+                    <h6>New Employee</h6>
+                    <p>Form design with validation</p>
+                </div>
+            </div>
+
+            <!-- Main Body -->
+            <div class="main__body">
+                <div class="main__bar">
+                    <div class="search">
+                        <i class='bx bx-search-alt-2'></i>
+                        <input type="text" name="" id="search">
+                        <p>Search Employees</p>
+                    </div>
+                    <button id="add-new-btn">
+                        <i class='bx bx-plus'></i>
+                        <span>Add New</span>
+                    </button>
+                </div>
+
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th class="th">
+                                <button>
+                                    <span>Employee Name</span>
+                                    <i class='bx bx-up-arrow-alt'></i>
+                                </button>
+                            </th>
+                            <th class="th">
+                                <button>
+                                    <span>Email Address (Personal)</span>
+                                    <i class='bx bx-up-arrow-alt'></i>
+                                </button>
+                            </th>
+                            <th class="th">
+                                <button>
+                                    <span>Mobile Number</span>
+                                    <i class='bx bx-up-arrow-alt'></i>
+                                </button>
+                            </th>
+                            <th class="th">
+                                <button>
+                                    <span>Department</span>
+                                    <i class='bx bx-up-arrow-alt'></i>
+                                </button>
+                            </th>
+                            <th class="th">
+                                <span>Actions</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr">
+                            <td class="td">1</td>
+                            <td class="td">1</td>
+                            <td class="td">1</td>
+                            <td class="td">1</td>
+                            <td class='td'>
+                                <div class='t__btn'>
+                                    <button class='edit-employe'><i class='bx bx-pencil' ></i></button>
+                                    <button class="dell-employe"><i class='bx bx-plus'></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">2</td>
+                            <td class="td">2</td>
+                            <td class="td">2</td>
+                            <td class="td">2</td>
+                            <td class='td'>
+                                <div class='t__btn'>
+                                    <button class='edit-employe'><i class='bx bx-pencil' ></i></button>
+                                    <button class="dell-employe"><i class='bx bx-plus'></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">3</td>
+                            <td class="td">3</td>
+                            <td class="td">3</td>
+                            <td class="td">3</td>
+                            <td class='td'>
+                                <div class='t__btn'>
+                                    <button class='edit-employe'><i class='bx bx-pencil' ></i></button>
+                                    <button class="dell-employe"><i class='bx bx-plus'></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </section>
+
+    <!-- Form Component -->
+    <div class="form__control">
+        <div class="form__head">
+            <h1>Employee Form</h1>
+            <button id="close"><i class='bx bx-plus'></i></button>
+        </div>
+        <div class="form__body">
+            <form action="">
+                <div class="form__left">
+                    <input type="text" name="fullname" id="full-name" placeholder="Full Name">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <input type="number" name="number" id="phone" placeholder="Mobil">
+                    <input type="text" name="number" id="city" placeholder="City">
+                </div>
+                <div class="form__right">
+                    <div class="flex__input">
+                        <p>Gender</p>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <select name="dep" id="select">
+                        <option value="">None</option>
+                        <option value="Development">Development</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="HR">HR</option>
+
+                    </select>
+                    <input type="date" name="date" id="date">
+                    <div class="agree-div">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label class="agree" for="agree">Permanent Employee</label>
+                    </div>
+                    <button id="submit" type="button">Submit</button>
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit form -->
+    <div class="form__edit hide__form-edit">
+        <form action="">
+            <button id="close-edit"><i class='bx bx-plus'></i></button>
+            <input type="text" name="fullname" id="full-name-edit">
+            <input type="email" name="email" id="email-edit">
+            <input type="number" name="phone" id="phone-edit">
+            <input type="text" name="city" id="city-edit">
+            <button id="save-edit">Save</button>
+        </form>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
